@@ -48,7 +48,7 @@ html {
 }
 
 body, p {
-	color: #f1f1f8; 
+	color: #f1f1f8;
 	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 }
 
@@ -257,7 +257,7 @@ a.white {
 }
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
 	.label-control {
 		top: 0.9375rem;
 	}
@@ -296,7 +296,7 @@ a.white {
 }
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
 	.form-control-input {
 		padding-top: 1.25rem;
 		padding-bottom: 0.75rem;
@@ -365,7 +365,7 @@ input[type='checkbox'] {
 }
 
 /* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
 	input[type='checkbox'] {
 		vertical-align: -9%;
 	}
@@ -495,17 +495,17 @@ input[type='checkbox'] {
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
 	opacity: 1;
-	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	transform: translateY(0) perspective(37.5rem) rotateX(0); 
+	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	transform: translateY(0) perspective(37.5rem) rotateX(0);
 }
 
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
 	opacity: 0;
-	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
 }
 
 /* dark overlay, start state */
@@ -592,7 +592,7 @@ input[type='checkbox'] {
 	left: 50%; /* centers the loading animation horizontally one the screen */
 	width: 3.75rem;
 	height: 1.25rem;
-	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
+	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */
 	text-align: center;
 }
 
@@ -622,11 +622,11 @@ input[type='checkbox'] {
 }
 
 @keyframes sk-bouncedelay {
-	0%, 80%, 100% { 
+	0%, 80%, 100% {
 		-webkit-transform: scale(0);
 		-ms-transform: scale(0);
 		transform: scale(0);
-	} 40% { 
+	} 40% {
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
@@ -761,7 +761,7 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header-background.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../img/bg.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -1008,7 +1008,7 @@ input[type='checkbox'] {
 	padding-top: 6.375rem;
 	padding-bottom: 6.875rem;
 	background: url('../images/video-background.jpg') center center no-repeat;
-	background-size: cover; 
+	background-size: cover;
 }
 
 .basic-1 h2 {
@@ -1045,7 +1045,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-1 .video-play-button:before {
 	content: "";
 	position: absolute;
@@ -1062,7 +1062,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-1 .video-play-button:after {
 	content: "";
 	position: absolute;
@@ -1079,7 +1079,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-1 .video-play-button span {
 	position: relative;
 	display: block;
@@ -1092,7 +1092,7 @@ input[type='checkbox'] {
 	border-top: 1rem solid transparent;
 	border-bottom: 1rem solid transparent;
 }
-  
+
 @keyframes pulse-border {
 	0% {
 		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
@@ -1103,7 +1103,7 @@ input[type='checkbox'] {
 		opacity: 0;
 	}
 }
-/* end of video play button */  
+/* end of video play button */
 
 
 /*************************/
@@ -1280,7 +1280,7 @@ input[type='checkbox'] {
 	padding-top: 6.5rem;
 	padding-bottom: 6.75rem;
 	background: url('../images/download-background.jpg') center center no-repeat;
-	background-size: cover; 
+	background-size: cover;
 }
 
 .basic-4 .text-container {
@@ -1322,7 +1322,7 @@ input[type='checkbox'] {
 
 .counter #counter .counter-value {
 	color: #f1f1f8;
-	font: 700 3.5rem/4.25rem "Montserrat", sans-serif;	
+	font: 700 3.5rem/4.25rem "Montserrat", sans-serif;
 	vertical-align: middle;
 }
 
@@ -1341,7 +1341,7 @@ input[type='checkbox'] {
 	padding-top: 6.25rem;
 	padding-bottom: 5.625rem;
 	background: url('../images/contact-background.jpg') center bottom no-repeat;
-	background-size: cover; 
+	background-size: cover;
 }
 
 .form h2 {
@@ -1453,7 +1453,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #36edfd; 
+	background-color: #36edfd;
 }
 
 
@@ -1534,10 +1534,10 @@ a:hover.back-to-top {
 
 /*****************************/
 /*     18. Media Queries     */
-/*****************************/	
+/*****************************/
 /* Min-width width 768px */
 @media (min-width: 768px) {
-	
+
 	/* General Styles */
 	.p-heading {
 		width: 85%;
@@ -1557,7 +1557,7 @@ a:hover.back-to-top {
 		box-shadow: none;
         background: transparent;
 	}
-	
+
 	.navbar-custom .navbar-brand.logo-text {
 		color: #fff;
 	}
@@ -1570,7 +1570,7 @@ a:hover.back-to-top {
 		padding: 0.25rem 0.75rem 0.25rem 0.75rem;
 		color: #fff;
 	}
-	
+
 	.navbar-custom .nav-item .nav-link:hover,
 	.navbar-custom .nav-item .nav-link.active {
 		color: #00c9db;
@@ -1589,7 +1589,7 @@ a:hover.back-to-top {
 	.navbar-custom.top-nav-collapse .nav-item .nav-link {
 		color: #fff;
 	}
-	
+
 	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
 	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
 		color: #00c9db;
@@ -1623,7 +1623,7 @@ a:hover.back-to-top {
 		width: 1.375rem;
 		background-size: 1.375rem 2.125rem;
 	}
-	
+
 	.slider-1 .swiper-button-next {
 		right: 1rem;
 		width: 1.375rem;
@@ -1637,7 +1637,7 @@ a:hover.back-to-top {
 		width: 4.5rem;
 		height: 4.5rem;
 	}
-	
+
 	.tabs .card .card-icon .fas,
 	.tabs .card .card-icon .far {
 		font-size: 2.25rem;
@@ -1700,7 +1700,7 @@ a:hover.back-to-top {
 		width: 1.375rem;
 		background-size: 1.375rem 2.125rem;
 	}
-	
+
 	.slider-2 .swiper-button-next {
 		width: 1.375rem;
 		background-size: 1.375rem 2.125rem;
@@ -1743,7 +1743,7 @@ a:hover.back-to-top {
 
 /* Min-width width 992px */
 @media (min-width: 992px) {
-	
+
 	/* Navigation */
 	.navbar-custom .social-icons {
 		display: block;
@@ -1755,12 +1755,12 @@ a:hover.back-to-top {
 		margin-left: 0.375rem;
 		font-size: 0.75rem;
 	}
-	
+
 	.navbar-custom .fa-stack-2x {
 		color: #00c9db;
 		transition: all 0.2s ease;
 	}
-	
+
 	.navbar-custom .fa-stack-1x {
 		color: #fff;
 		transition: all 0.2s ease;
@@ -1800,7 +1800,7 @@ a:hover.back-to-top {
 	.tabs .card-body {
 		padding: 1rem 0 1.5rem 0;
 	}
-	
+
 	.tabs #tab-1 .card.left-pane {
 		text-align: right;
 	}
@@ -1820,7 +1820,7 @@ a:hover.back-to-top {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	
+
 	.tabs #tab-2 .icon-cards-area {
 		margin-top: 2.25rem;
 	}
@@ -1916,9 +1916,9 @@ a:hover.back-to-top {
 		margin-right: 2.5rem;
 		margin-left: 2.5rem;
 	}
-	
+
 	.counter #counter .counter-value {
-		font: 700 4.25rem/4.5rem "Montserrat", sans-serif;	
+		font: 700 4.25rem/4.5rem "Montserrat", sans-serif;
 	}
 	/* end of statistics */
 
@@ -1944,7 +1944,7 @@ a:hover.back-to-top {
 
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
-	
+
 	/* Navigation */
 	.navbar-custom {
 		padding: 2.125rem 5rem 2.125rem 5rem;
@@ -1955,7 +1955,7 @@ a:hover.back-to-top {
 	}
 	/* end of navigation */
 
-	
+
 	/* General Styles */
 	.p-heading {
 		width: 44%;
@@ -2021,7 +2021,7 @@ a:hover.back-to-top {
 		padding-right: 2.5rem;
 		padding-left: 2.5rem;
 	}
-	
+
 	.tabs #tab-3 .icon-cards-area {
 		margin-top: 2rem;
 		margin-left: 1rem;
@@ -2030,7 +2030,7 @@ a:hover.back-to-top {
 	.tabs #tab-3 .icon-cards-area .card {
 		margin-right: 3.875rem;
 	}
-	
+
 	.tabs #tab-3 .text-area {
 		margin-right: 1.5rem;
 		margin-left: 1rem;
@@ -2045,8 +2045,8 @@ a:hover.back-to-top {
 		margin-right: 1.5rem;
 	}
 	/* end of details 1 */
-	
-	
+
+
 	/* Details 2 */
 	.basic-3 .text-container {
 		margin-top: 4.5rem;
