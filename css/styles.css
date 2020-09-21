@@ -644,11 +644,8 @@ input[type='checkbox'] {
 	transition: all 0.2s ease;
 }
 
-.navbar-custom .navbar-brand.logo-image img {
-    width: 113px;
-	height: 34px;
-	margin-bottom: 1px;
-	-webkit-backface-visibility: hidden;
+.navbar-custom .navbar-brand.logo-text img {
+  margin-right: 6px;
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -656,6 +653,8 @@ input[type='checkbox'] {
 	color: #fff;
 	letter-spacing: -0.5px;
 	text-decoration: none;
+	display: flex;
+	align-items: center;
 }
 
 .navbar-custom .navbar-nav {
