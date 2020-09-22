@@ -32,7 +32,7 @@ Colors:
 
 - Text, navbar links - white #f1f1f8
 - Buttons, bullets, icons - turquoise #00c9db
-- Navbar - navy #4633af
+- Navbar - navy #186282
 - Backgrounds - dark denim #262431
 - Backgrounds - denim #2f2c3d
 ******************************************/
@@ -116,7 +116,7 @@ a:hover {
 }
 
 a.turquoise {
-	color: #00c9db;
+	color: white;
 }
 
 a.white {
@@ -583,7 +583,7 @@ input[type='checkbox'] {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: #2f2c3d;
+	background: #186282;
 }
 
 .spinner {
@@ -638,7 +638,7 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	background-color: #4633af;
+	background-color: #186282;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 700 0.75rem/2rem "Montserrat", sans-serif;
 	transition: all 0.2s ease;
@@ -698,7 +698,7 @@ input[type='checkbox'] {
 	margin-top: 0;
 	border: none;
 	border-radius: 0.25rem;
-	background-color: #4633af;
+	background-color: #186282;
 }
 
 .navbar-custom .dropdown-item {
@@ -707,7 +707,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item:hover {
-	background-color: #4633af;
+	background-color: #186282;
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -859,7 +859,7 @@ input[type='checkbox'] {
 .tabs {
 	padding-top: 6.5rem;
 	padding-bottom: 4.25rem;
-	background-color: #2f2c3d;
+	background-color: #186282;
 }
 
 .tabs h2 {
@@ -1234,7 +1234,7 @@ input[type='checkbox'] {
 .slider-2 {
 	padding-top: 6.875rem;
 	padding-bottom: 6.875rem;
-	background-color: #2f2c3d;
+	background-color: #9baec8;
 }
 
 .slider-2 .slider-container {
@@ -1307,7 +1307,7 @@ input[type='checkbox'] {
 .counter {
 	padding-top: 6.5rem;
 	padding-bottom: 5.375rem;
-	background-color: #262431;
+	background-color: #9baec8;
 	text-align: center;
 }
 
@@ -1372,7 +1372,7 @@ input[type='checkbox'] {
 /**********************/
 .footer {
 	padding-top: 5rem;
-	background-color: #262431;
+	background-color: #186282;
 }
 
 .footer .footer-col {
@@ -1424,7 +1424,7 @@ input[type='checkbox'] {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
-	background-color: #262431;
+	background-color: #186282;
 	text-align: center;
 }
 
@@ -1578,7 +1578,7 @@ a:hover.back-to-top {
 	.navbar-custom.top-nav-collapse {
         padding: 0.5rem 1.5rem 0.5rem 2rem;
 		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-		background-color: #4633af;
+		background-color: #186282;
 	}
 
 	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
