@@ -25,6 +25,7 @@ Table Of Contents:
 16. Back To Top Button
 17. Extra Pages
 18. Media Queries
+19. Hall of Fame(Contributers)
 ******************************************/
 
 /*****************************************
@@ -2103,3 +2104,16 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+
+/******************************/
+/*     01. Hall of Fame       */
+/******************************/
+#wrap {
+	min-height: 55vh;
+}
+#author { 
+	padding :2%;
+	min-height: 55vh;
+	max-height: 55vh;
+}
