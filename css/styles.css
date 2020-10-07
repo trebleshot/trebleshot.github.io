@@ -2117,3 +2117,6 @@ a:hover.back-to-top {
 	min-height: 55vh;
 	max-height: 55vh;
 }
+.template {
+	display: none;
+}
