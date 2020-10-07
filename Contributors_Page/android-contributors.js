@@ -21,7 +21,7 @@ var getData = (function ($) {
 			    '<p> Contributions: ' + d.contributions + '</p>' +
 		    '</div></div></div>'
 
-        $('#app-contributors').append(template)
+        $('#android-contributors').append(template)
         users[i] = d.url
         i = i + 1
       }
