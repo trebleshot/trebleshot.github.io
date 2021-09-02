@@ -1,689 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- SEO Meta Tags -->
-    <meta
-      name="description"
-      content="TrebleShot is an open-source application that allows you to send and receive files without an internet connection"
-    />
-    <meta name="author" content="TrebleShot" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="TrebleShot" />
-    <!-- website name -->
-    <meta property="og:site" content="http://www.trebleshot.com" />
-    <!-- website link -->
-    <meta property="og:title" content="FOSS Sharing Application" />
-    <!-- title shown in the actual shared post -->
-    <meta
-      property="og:description"
-      content="TrebleShot is an open-source application that allows you to send and receive files without an internet connection"
-    />
-    <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" />
-    <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" />
-    <!-- where do you want your post to link to -->
-    <meta property="og:type" content="article" />
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="TrebleShot is an open-source application that allows you to send and receive files without an internet connection" />
+  <meta name="author" content="TrebleShot" />
 
-    <!-- Website Title -->
-    <title>TrebleShot - FOSS Sharing Application</title>
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+  <meta property="og:site_name" content="TrebleShot" />
+  <!-- website name -->
+  <meta property="og:site" content="http://trebleshot.monora.org" />
+  <!-- website link -->
+  <meta property="og:title" content="FOSS Sharing Application" />
+  <!-- title shown in the actual shared post -->
+  <meta property="og:description"
+    content="An open-source software to send and receive files securely without the internet" />
+  <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="" />
+  <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="" />
+  <!-- where do you want your post to link to -->
+  <meta property="og:type" content="article" />
 
-    <!-- Styles -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i"
-      rel="stylesheet"
-    />
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/fontawesome-all.css" rel="stylesheet" />
-    <link href="css/swiper.css" rel="stylesheet" />
-    <link href="css/magnific-popup.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+  <!-- Website Title -->
+  <title>TrebleShot - FOSS Sharing Application</title>
 
-    <!-- Favicon  -->
-    <link rel="icon" href="img/ic_launcher-web.png" />
-  </head>
-  <body data-spy="scroll" data-target=".fixed-top">
-    <!-- Preloader -->
-    <div class="spinner-wrapper">
-      <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-      </div>
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/fontawesome-all.css" rel="stylesheet" />
+  <link href="css/swiper.css" rel="stylesheet" />
+  <link href="css/magnific-popup.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <!-- Favicon  -->
+  <link rel="icon" href="img/trebleshot-log.png" />
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+  <!-- Preloader -->
+  <div class="spinner-wrapper">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
     </div>
-    <!-- end of preloader -->
+  </div>
+  <!-- end of preloader -->
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-      <a class="navbar-brand logo-text page-scroll" href="index.html"
-        ><img src="img/ic_launcher-web.png" height="35px">TrebleShot</a
-      >
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+    <a class="navbar-brand logo-text page-scroll" href="index.html">
+      <img src="img/trebleshot-log.png" style="height: 1.75em;"> TrebleShot
+    </a>
 
-      <!-- Mobile Menu Toggle Button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbar-main"
-        aria-controls="navbar-main"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-awesome fas fa-bars"></span>
-        <span class="navbar-toggler-awesome fas fa-times"></span>
-      </button>
-      <!-- end of mobile menu toggle button -->
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main"
+      aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-awesome fas fa-bars"></span>
+      <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
 
-      <div class="collapse navbar-collapse" id="navbar-main">
-        <ul class="navbar-nav ml-auto">
+    <div class="collapse navbar-collapse" id="navbar-main">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#header">HOME<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#features">FEATURES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#screenshots">SCREENSHOTS</a>
+        </li>
+      </ul>
+      <span class="nav-item social-icons">
+        <span class="fa-stack">
+          <a href="https://github.com/trebleshot/android">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-github fa-stack-1x"></i>
+          </a>
+        </span>
+      </span>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+  <!-- end of navigation -->
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="text-container">
+              <h1>
+                SHARING APP <br />FOR
+                <span id="js-rotating">MOBILE, DESKTOP, BROWSERS</span>
+              </h1>
+              <p class="p-large">
+                TrebleShot is an open-source app that allows you to transfer files one to one securely or
+                using a browser, all without the internet. Download it today!
+              </p>
+              <a class="btn-solid-lg page-scroll"
+                href="https://play.google.com/store/apps/details?id=com.genonbeta.TrebleShot"><i
+                  class="fab fa-google-play"></i>Play Store</a>
+              <a class="btn-solid-lg page-scroll" href="https://github.com/trebleshot/android"><i
+                  class="fab fa-github"></i>GitHub</a>
+            </div>
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-6">
+            <div class="image-container">
+              <img class="img-fluid" src="img/app_banner.png" alt="alternative" width="300px" height="500px" />
+            </div>
+            <!-- end of image-container -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of header-content -->
+  </header>
+  <!-- end of header -->
+  <!-- end of header -->
+
+  <!-- Features -->
+  <div id="features" class="tabs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>FEATURES</h2>
+          <div class="p-heading p-large">
+            TrebleShot was designed based on input from the community.
+          </div>
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of row -->
+      <div class="row">
+        <!-- Tabs Links -->
+        <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="#header"
-              >HOME<span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1"
+              aria-selected="true"><i class="fas fa-star"></i>HIGHLIGHTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="#features">FEATURES</a>
+            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2"
+              aria-selected="false"><i class="fas fa-calendar-week"></i>PLANNED</a>
           </li>
         </ul>
-        <span class="nav-item social-icons">
-          <span class="fa-stack">
-            <a href="https://github.com/genonbeta/TrebleShot">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fab fa-github fa-stack-1x"></i>
-            </a>
-          </span>
-        </span>
-      </div>
-    </nav>
-    <!-- end of navbar -->
-    <!-- end of navigation -->
+        <!-- end of tabs links -->
 
-    <!-- Header -->
-    <header id="header" class="header">
-      <div class="header-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="text-container">
-                <h1>
-                  SHARING APP <br />FOR
-                  <span id="js-rotating">MOBILE, DESKTOP, BROWSERS</span>
-                </h1>
-                <p class="p-large">
-                  An Open-Source Android application that allows you to send and
-                  receive files over available connections, and offers unique
-                  features like sharing over HTTP, pausing and resuming
-                  transfers. Download it today!
-                </p>
-                <a
-                  class="btn-solid-lg page-scroll"
-                  href="https://play.google.com/store/apps/details?id=com.genonbeta.TrebleShot"
-                  ><i class="fab fa-google-play"></i>PLAY STORE</a
-                >
-                <a
-                  class="btn-solid-lg page-scroll"
-                  href="https://github.com/genonbeta/TrebleShot"
-                  ><i class="fab fa-github"></i>GITHUB</a
-                >
-              </div>
-            </div>
-            <!-- end of col -->
-            <div class="col-lg-6">
-              <div class="image-container">
-                <img
-                  class="img-fluid"
-                  src="img/shot.png"
-                  alt="alternative"
-                  width="300px"
-                  height="500px"
-
-                />
-              </div>
-              <!-- end of image-container -->
-            </div>
-            <!-- end of col -->
-          </div>
-          <!-- end of row -->
-        </div>
-        <!-- end of container -->
-      </div>
-      <!-- end of header-content -->
-    </header>
-    <!-- end of header -->
-    <!-- end of header -->
-
-    <!-- Features -->
-    <div id="features" class="tabs">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>FEATURES</h2>
-            <div class="p-heading p-large">
-              TrebleShot was designed based on input from the community.
-            </div>
-          </div>
-          <!-- end of col -->
-        </div>
-        <!-- end of row -->
-        <div class="row">
-          <!-- Tabs Links -->
-          <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                id="nav-tab-1"
-                data-toggle="tab"
-                href="#tab-1"
-                role="tab"
-                aria-controls="tab-1"
-                aria-selected="true"
-                ><i class="fas fa-project-diagram"></i>MAIN FEATURES</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="nav-tab-2"
-                data-toggle="tab"
-                href="#tab-2"
-                role="tab"
-                aria-controls="tab-2"
-                aria-selected="false"
-                ><i class="fas fa-binoculars"></i>DISCOVERING DEVICES</a
-              >
-            </li>
-          </ul>
-          <!-- end of tabs links -->
-
-          <!-- Tabs Content-->
-          <div class="tab-content" id="lenoTabsContent">
-            <!-- Tab -->
-            <div
-              class="tab-pane fade show active"
-              id="tab-1"
-              role="tabpanel"
-              aria-labelledby="tab-1"
-            >
-              <div class="container">
-                <div class="row">
-                  <!-- Icon Cards Pane -->
-                  <div class="col-lg-4">
-                    <div class="card left-pane first">
-                      <div class="card-body">
-                        <div class="text-wrapper">
-                          <h4 class="card-title">Resume Transfers</h4>
-                          <p>
-                            Pause and resume transfers even after something went
-                            wrong.
-                          </p>
-                        </div>
-                        <div class="card-icon">
-                          <i class="far fa-compass"></i>
-                        </div>
+        <!-- Tabs Content-->
+        <div class="tab-content" id="lenoTabsContent">
+          <!-- Tab -->
+          <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+            <div class="container">
+              <div class="row">
+                <!-- Icon Cards Pane -->
+                <div class="col-lg-4">
+                  <div class="card left-pane first">
+                    <div class="card-body">
+                      <div class="text-wrapper">
+                        <h4 class="card-title">Secure</h4>
+                        <p>
+                          Connections to other clients are encrypted using TLSv1.2.
+                        </p>
                       </div>
-                    </div>
-                    <div class="card left-pane">
-                      <div class="card-body">
-                        <div class="text-wrapper">
-                          <h4 class="card-title">Multiple Devices</h4>
-                          <p>Share with multiple devices at the same time.</p>
-                        </div>
-                        <div class="card-icon">
-                          <i class="far fa-file-code"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card left-pane">
-                      <div class="card-body">
-                        <div class="text-wrapper">
-                          <h4 class="card-title">No Internet</h4>
-                          <p>
-                            No internet connection is required, setup a hotspot
-                            and connect to it using QR code.
-                          </p>
-                        </div>
-                        <div class="card-icon">
-                          <i class="far fa-gem"></i>
-                        </div>
+                      <div class="card-icon">
+                        <i class="fas fa-lock"></i>
                       </div>
                     </div>
                   </div>
-                  <!-- end of icon cards pane -->
-
-                  <!-- Image Pane -->
-                  <div class="col-lg-4">
-                    <img
-                      class="img-fluid"
-                      src="img/shot_2.webp"
-                      alt="alternative"
-                      style="box-shadow: 0px 00px 20px #fff;"
-                    />
-                  </div>
-                  <!-- end of image pane -->
-
-                  <!-- Icon Cards Pane -->
-                  <div class="col-lg-4">
-                    <div class="card right-pane first">
-                      <div class="card-body">
-                        <div class="card-icon">
-                          <i class="fas fa-wifi"></i>
-                        </div>
-                        <div class="text-wrapper">
-                          <h4 class="card-title">No Internet</h4>
-                          <p>
-                            No internet connection is required. Setup a hotspot
-                            and connect to it using QR code.
-                          </p>
-                        </div>
+                  <div class="card left-pane">
+                    <div class="card-body">
+                      <div class="text-wrapper">
+                        <h4 class="card-title">Share All</h4>
+                        <p>Share media files, apps, files & folders, plain texts, and URLs.</p>
                       </div>
-                    </div>
-                    <div class="card right-pane">
-                      <div class="card-body">
-                        <div class="card-icon">
-                          <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <div class="text-wrapper">
-                          <h4 class="card-title">Speed-Oriented</h4>
-                          <p>
-                            Works faster than its rivals on low-end devices.
-                            Minimal UI optimized for speed.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card right-pane">
-                      <div class="card-body">
-                        <div class="card-icon">
-                          <i class="fas fa-cube"></i>
-                        </div>
-                        <div class="text-wrapper">
-                          <h4 class="card-title">Large Files</h4>
-                          <p>
-                            Great support for files with larger than average
-                            sizes.
-                          </p>
-                        </div>
+                      <div class="card-icon">
+                        <i class="fas fa-film"></i>
                       </div>
                     </div>
                   </div>
-                  <!-- end of icon cards pane -->
+                  <div class="card left-pane">
+                    <div class="card-body">
+                      <div class="text-wrapper">
+                        <h4 class="card-title">Send to PC</h4>
+                        <p>
+                          Send and receive locally using a web browser.
+                        </p>
+                      </div>
+                      <div class="card-icon">
+                        <i class="fas fa-desktop"></i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- end of row -->
-              </div>
-              <!-- end of container -->
-            </div>
-            <!-- end of tab-pane -->
-            <!-- end of tab -->
+                <!-- end of icon cards pane -->
 
-            <!-- Tab -->
-            <div
-              class="tab-pane fade"
-              id="tab-2"
-              role="tabpanel"
-              aria-labelledby="tab-2"
-            >
-              <div class="container">
-                <div class="row">
-                  <!-- Image Pane -->
-                  <div class="col-md-4">
-                    <img
-                      class="img-fluid"
-                      src="img/ic_launcher-web.png"
-                      alt="alternative"
-                    />
-                  </div>
-                  <!-- end of image pane -->
+                <!-- Image Pane -->
+                <div class="col-lg-4">
+                  <img class="img-fluid rounded-lg" src="img/shot1.png" alt="alternative"
+                    style="box-shadow: 0px 00px 20px #8c0032;" />
+                </div>
+                <!-- end of image pane -->
 
-                  <!-- Text And Icon Cards Area -->
-                  <div class="col-md-8">
-                    <div class="text-area">
-                      <h3>Find devices with ease</h3>
-                      <p>
-                        TrebleShot provides handful tools to help you send any
-                        file on any situation. Devices that are on the same
-                        network will recognize each other. You can also scan the
-                        code over your phone's screen or start a deep scan over
-                        the network.
-                      </p>
+                <!-- Icon Cards Pane -->
+                <div class="col-lg-4">
+                  <div class="card right-pane first">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fas fa-wifi"></i>
+                      </div>
+                      <div class="text-wrapper">
+                        <h4 class="card-title">No Internet</h4>
+                        <p>
+                          Set up a hotspot and you are good to go.
+                        </p>
+                      </div>
                     </div>
-                    <!-- end of text-area -->
                   </div>
-                  <!-- end of col-md-8 -->
-                  <!-- end of text and icon cards area -->
+                  <div class="card right-pane">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fas fa-donate"></i>
+                      </div>
+                      <div class="text-wrapper">
+                        <h4 class="card-title">Open-source</h4>
+                        <p>
+                          Uses uprotocol, an open content-sharing protocol.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card right-pane">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fas fa-cube"></i>
+                      </div>
+                      <div class="text-wrapper">
+                        <h4 class="card-title">Large Files</h4>
+                        <p>
+                          Great support for files with larger than average
+                          sizes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- end of row -->
+                <!-- end of icon cards pane -->
               </div>
-              <!-- end of container -->
+              <!-- end of row -->
             </div>
-            <!-- end of tab-pane -->
-            <!-- end of tab -->
+            <!-- end of container -->
           </div>
-          <!-- end of tab-content -->
-          <!-- end of tabs content -->
-        </div>
-        <!-- end of row -->
-      </div>
-      <!-- end of container -->
-    </div>
-    <!-- end of tabs -->
-    <!-- end of features -->
+          <!-- end of tab-pane -->
+          <!-- end of tab -->
 
-    <!-- Screenshots -->
-    <div class="slider-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- Image Slider -->
-            <div class="slider-container">
-              <div class="swiper-container image-slider">
-                <div class="swiper-wrapper">
-                  <!-- Slide -->
-                  <div class="swiper-slide">
-                    <a
-                      href="img/shot1.webp"
-                      class="popup-link"
-                      data-effect="fadeIn"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="img/shot1.webp"
-                        alt="alternative"
-                      />
-                    </a>
+          <!-- Tab -->
+          <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+            <div class="container">
+              <div class="row">
+                <!-- Text And Icon Cards Area -->
+                <div class="col-12 offset-md-1 col-md-10 offset-lg-3 col-lg-6">
+                  <div class="text-area">
+                    <h3><i class="fas fa-desktop mr-3"></i> TrebleShot Desktop Client</h3>
+                    <p>
+                      Right now, you can easily transfer files between your phone and PC
+                      using a web browser. The plan is to open up all the capabilities of
+                      TrebleShot with a native desktop client. 
+                    </p>
                   </div>
-                  <!-- end of slide -->
-
-                  <!-- Slide -->
-                  <div class="swiper-slide">
-                    <a
-                      href="img/shot2.webp"
-                      class="popup-link"
-                      data-effect="fadeIn"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="img/shot2.webp"
-                        alt="alternative"
-                      />
-                    </a>
-                  </div>
-                  <!-- end of slide -->
-
-                  <!-- Slide -->
-                  <div class="swiper-slide">
-                    <a
-                      href="img/shot3.webp"
-                      class="popup-link"
-                      data-effect="fadeIn"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="img/shot3.webp"
-                        alt="alternative"
-                      />
-                    </a>
-                  </div>
-                  <!-- end of slide -->
-
-                  <!-- Slide -->
-                  <div class="swiper-slide">
-                    <a
-                      href="img/shot4.webp"
-                      class="popup-link"
-                      data-effect="fadeIn"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="img/shot4.webp"
-                        alt="alternative"
-                      />
-                    </a>
-                  </div>
-                  <!-- end of slide -->
-
-                  <!-- Slide -->
-                  <div class="swiper-slide">
-                    <a
-                      href="img/shot5.webp"
-                      class="popup-link"
-                      data-effect="fadeIn"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="img/shot5.webp"
-                        alt="alternative"
-                      />
-                    </a>
-                  </div>
-                  <!-- end of slide -->
-
-                  <!-- Slide -->
-                  <div class="swiper-slide">
-                    <a
-                      href="img/shot6.webp"
-                      class="popup-link"
-                      data-effect="fadeIn"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="img/shot6.webp"
-                        alt="alternative"
-                      />
-                    </a>
-                  </div>
-                  <!-- end of slide -->
-
-                  <!-- Slide -->
-                  <div class="swiper-slide">
-                    <a
-                      href="img/shot7.webp"
-                      class="popup-link"
-                      data-effect="fadeIn"
-                    >
-                      <img
-                        class="img-fluid"
-                        src="img/shot7.webp"
-                        alt="alternative"
-                      />
-                    </a>
-                  </div>
-                  <!-- end of slide -->
+                  <!-- end of text-area -->
                 </div>
-                <!-- end of swiper-wrapper -->
-
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <!-- end of add arrows -->
+                <!-- end of col-md-8 -->
+                <!-- end of text and icon cards area -->
               </div>
-              <!-- end of swiper-container -->
+              <!-- end of row -->
             </div>
-            <!-- end of slider-container -->
-            <!-- end of image slider -->
+            <!-- end of container -->
           </div>
-          <!-- end of col -->
+          <!-- end of tab-pane -->
+          <!-- end of tab -->
         </div>
-        <!-- end of row -->
+        <!-- end of tab-content -->
+        <!-- end of tabs content -->
       </div>
-      <!-- end of container -->
+      <!-- end of row -->
     </div>
-    <!-- end of slider-2 -->
-    <!-- end of screenshots -->
+    <!-- end of container -->
+  </div>
+  <!-- end of tabs -->
+  <!-- end of features -->
 
-    <!-- Statistics -->
-    <div class="counter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- Counter -->
-            <div id="counter">
-              <div class="cell">
-                <div class="counter-value number-count" data-count="417">1</div>
-                <p class="counter-info">
-                  <a
-                    href="https://github.com/genonbeta/TrebleShot/stargazers"
-                    target="blank"
-                    >Stars</a
-                  >
-                </p>
-              </div>
-              <div class="cell">
-                <div class="counter-value number-count" data-count="68">1</div>
-                <p class="counter-info">
-                  <a
-                    href="https://github.com/genonbeta/TrebleShot/issues?q=is%3Aissue+is%3Aclosed"
-                    target="blank"
-                    >Issues Solved</a
-                  >
-                </p>
-              </div>
-              <div class="cell">
-                <div class="counter-value number-count" data-count="10000">
-                  1
+  <!-- Screenshots -->
+  <div id="screenshots" class="slider-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">SCREENSHOTS</h2>
+          <div class="p-heading p-large">
+            Taken from the version 2.0 for Android.
+          </div>
+        </div>
+        <!-- end of col -->
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Image Slider -->
+          <div class="slider-container">
+            <div class="swiper-container image-slider">
+              <div class="swiper-wrapper">
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <a href="img/shot1.png" class="popup-link" data-effect="fadeIn">
+                    <img class="img-fluid rounded-lg" src="img/shot1.png" alt="alternative" />
+                  </a>
                 </div>
-                <p class="counter-info">
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.genonbeta.TrebleShot"
-                    target="blank"
-                    >Downloads</a
-                  >
-                </p>
+                <!-- end of slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <a href="img/shot2.png" class="popup-link" data-effect="fadeIn">
+                    <img class="img-fluid rounded-lg" src="img/shot2.png" alt="alternative" />
+                  </a>
+                </div>
+                <!-- end of slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <a href="img/shot3.png" class="popup-link" data-effect="fadeIn">
+                    <img class="img-fluid rounded-lg" src="img/shot3.png" alt="alternative" />
+                  </a>
+                </div>
+                <!-- end of slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <a href="img/shot4.png" class="popup-link" data-effect="fadeIn">
+                    <img class="img-fluid rounded-lg" src="img/shot4.png" alt="alternative" />
+                  </a>
+                </div>
+                <!-- end of slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <a href="img/shot5.png" class="popup-link" data-effect="fadeIn">
+                    <img class="img-fluid rounded-lg" src="img/shot5.png" alt="alternative" />
+                  </a>
+                </div>
+                <!-- end of slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <a href="img/shot6.png" class="popup-link" data-effect="fadeIn">
+                    <img class="img-fluid rounded-lg" src="img/shot6.png" alt="alternative" />
+                  </a>
+                </div>
+                <!-- end of slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <a href="img/shot7.png" class="popup-link" data-effect="fadeIn">
+                    <img class="img-fluid rounded-lg" src="img/shot7.png" alt="alternative" />
+                  </a>
+                </div>
+                <!-- end of slide -->
               </div>
-            </div>
-            <!-- end of counter -->
-          </div>
-          <!-- end of col -->
-        </div>
-        <!-- end of row -->
-      </div>
-      <!-- end of container -->
-    </div>
-    <!-- end of counter -->
-    <!-- end of statistics -->
+              <!-- end of swiper-wrapper -->
 
-    <!-- Footer -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="footer-col">
-              <h4>About TrebleShot</h4>
-              <p>We're passionate about creating the best mobile apps.</p>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- end of add arrows -->
             </div>
+            <!-- end of swiper-container -->
           </div>
-          <!-- end of col -->
-          <div class="col-md-4">
-            <div class="footer-col middle">
-              <h4>Important Links</h4>
-              <ul class="list-unstyled li-space-lg">
-                <li class="media">
-                  <i class="fas fa-square"></i>
-                  <div class="media-body">
-                    <a class="turquoise" href="https://github.com/genonbeta/"
-                      >GitHub</a
-                    >
-                  </div>
-                </li>
-                <li class="media">
-                  <i class="fas fa-square"></i>
-                  <div class="media-body">
-                    <a
-                      class="turquoise"
-                      href="https://play.google.com/store/apps/details?id=com.genonbeta.TrebleShot"
-                      >Play Store</a
-                    >
-                  </div>
-                </li>
-                <li class="media">
-                  <i class="fas fa-square"></i>
-                  <div class="media-body">
-                    <a
-                      class="turquoise"
-                      href="https://f-droid.org/packages/com.genonbeta.TrebleShot/"
-                      >F-Droid</a
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- end of col -->
-          <div class="col-md-4">
-            <div class="footer-col last">
-              <h4>Connect with us</h4>
-              <span class="fa-stack">
-                <a href="https://github.com/genonbeta/TrebleShot">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x"></i>
-                </a>
-              </span>
-            </div>
-          </div>
-          <!-- end of col -->
+          <!-- end of slider-container -->
+          <!-- end of image slider -->
         </div>
-        <!-- end of row -->
+        <!-- end of col -->
       </div>
-      <!-- end of container -->
+      <!-- end of row -->
     </div>
-    <!-- end of footer -->
-    <!-- end of footer -->
+    <!-- end of container -->
+  </div>
+  <!-- end of slider-2 -->
+  <!-- end of screenshots -->
 
-    <!-- Copyright -->
-    <div class="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <p class="p-small">
-              Source code for this website available at
-              <a href="https://github.com/trebleshot/trebleshot.github.io"
-                >GitHub</a
-              >.
+  <!-- Statistics -->
+  <div class="counter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="counter">
+            <div class="cell">
+              <div class="counter-value number-count" data-count="37">
+                1
+              </div>
+              <p class="counter-info">
+                <a href="https://hosted.weblate.org/engage/trebleshot/"
+                  target="blank">Languages Supported</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of counter -->
+  <!-- end of statistics -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-col">
+            <h4>About TrebleShot</h4>
+            <p>
+              Developed mainly by <a href="https://velitasali.com/">Veli Tasalı</a>, 
+              TrebleShot is a free and open-source software powered by 
+              <a href="https://github.com/uprotocol">uprotocol</a>.
             </p>
-            <p class="p-small">
-              Website template by <a href="https://inovatik.com">Inovatik</a> -
-              Copyright © 2020 - All rights reserved
+            <p>
+              <a href="https://monora.org">monora</a> is the parent organization. 
             </p>
           </div>
-          <!-- end of col -->
         </div>
-        <!-- enf of row -->
+        <!-- end of col -->
+        <div class="col-md-4">
+          <div class="footer-col middle">
+            <h4>Important Links</h4>
+            <ul class="list-unstyled li-space-lg">
+              <li class="media">
+                <i class="fas fa-square"></i>
+                <div class="media-body">
+                  <a class="turquoise" href="https://github.com/trebleshot/">GitHub</a>
+                </div>
+              </li>
+              <li class="media">
+                <i class="fas fa-square"></i>
+                <div class="media-body">
+                  <a class="turquoise"
+                    href="https://play.google.com/store/apps/details?id=com.genonbeta.TrebleShot">Play Store</a>
+                </div>
+              </li>
+              <li class="media">
+                <i class="fas fa-square"></i>
+                <div class="media-body">
+                  <a class="turquoise" href="https://f-droid.org/packages/com.genonbeta.TrebleShot/">F-Droid</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end of col -->
+        <div class="col-md-4">
+          <div class="footer-col last">
+            <h4>Connect with Us</h4>
+            <span class="fa-stack">
+              <a href="https://github.com/trebleshot/android">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="https://twitter.com/ossts">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="https://fosstodon.org/@trebleshot">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-mastodon fa-stack-1x"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+        <!-- end of col -->
       </div>
-      <!-- end of container -->
+      <!-- end of row -->
     </div>
-    <!-- end of copyright -->
-    <!-- end of copyright -->
+    <!-- end of container -->
+  </div>
+  <!-- end of footer -->
+  <!-- end of footer -->
 
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script>
-    <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script>
-    <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script>
-    <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script>
-    <!-- Magnific Popup for lightboxes -->
-    <script src="js/morphext.min.js"></script>
-    <!-- Morphtext rotating text in the header -->
-    <script src="js/validator.min.js"></script>
-    <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script>
-    <!-- Plausible Ethical Analytics -->
-    <script async defer data-domain="trebleshot.monora.org" src="https://analytics.monora.org/js/plausible.js"></script>
-    <!-- Custom scripts -->
-  </body>
+  <!-- Copyright -->
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="p-small">
+            Source code for this website available at
+            <a href="https://github.com/trebleshot/trebleshot.github.io">GitHub</a>.
+          </p>
+          <p class="p-small">
+            Website template by <a href="https://inovatik.com">Inovatik</a> -
+            Copyright © 2020 - All rights reserved
+          </p>
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- enf of row -->
+    </div>
+    <!-- end of container -->
+  </div>
+  <!-- end of copyright -->
+  <!-- end of copyright -->
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <!-- jQuery for Bootstrap's JavaScript plugins -->
+  <script src="js/popper.min.js"></script>
+  <!-- Popper tooltip library for Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap framework -->
+  <script src="js/jquery.easing.min.js"></script>
+  <!-- jQuery Easing for smooth scrolling between anchors -->
+  <script src="js/swiper.min.js"></script>
+  <!-- Swiper for image and text sliders -->
+  <script src="js/jquery.magnific-popup.js"></script>
+  <!-- Magnific Popup for lightboxes -->
+  <script src="js/morphext.min.js"></script>
+  <!-- Morphtext rotating text in the header -->
+  <script src="js/validator.min.js"></script>
+  <!-- Validator.js - Bootstrap plugin that validates forms -->
+  <script src="js/scripts.js"></script>
+  <!-- Plausible Ethical Analytics -->
+  <script async defer data-domain="trebleshot.monora.org" src="https://analytics.monora.org/js/plausible.js"></script>
+  <!-- Custom scripts -->
+</body>
+
 </html>

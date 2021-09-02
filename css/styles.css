@@ -31,12 +31,41 @@ Table Of Contents:
 Colors:
 
 - Text, navbar links - white #f1f1f8
-- Buttons, bullets, icons - turquoise #46BE4A
+- Buttons, bullets, icons - turquoise #fa5788
 - Navbar - navy #37474F
 - Backgrounds - dark denim #262431
 - Backgrounds - denim #2f2c3d
 ******************************************/
 
+@font-face {
+	font-family: "Cantarell";
+	font-style: normal;
+	font-weight: 900;
+	src: url(../fonts/cantarell-extra-bold-latin.woff2) format("woff2");
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215;
+}
+@font-face {
+	font-family: "Cantarell";
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/cantarell-bold-latin.woff2) format("woff2");
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215;
+}
+@font-face {
+	font-family: "Cantarell";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/cantarell-regular-latin.woff2) format("woff2");
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215;
+}
+
+@font-face {
+	font-family: "Cantarell";
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/cantarell-light.woff2) format("woff2");
+  font-display: block;
+}
 
 /******************************/
 /*     01. General Styles     */
@@ -48,18 +77,20 @@ html {
 }
 
 body, p {
-	color: #f1f1f8;
-	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+	color: #eee;
+	font-family: Cantarell, system-ui, sans-serif;
 }
 
 .p-large {
-	color: #f1f1f8;
-	font: 400 1rem/1.5rem "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	font-weight: 1.5rem;
 }
 
 .p-small {
-	color: #f1f1f8;
-	font: 400 0.75rem/1.25rem "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: .75rem;
+	font-weight: 1.25rem;
 }
 
 .p-heading {
@@ -75,48 +106,53 @@ body, p {
 	padding-left: 1.25rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: #ddd;
+	font-weight: 900;
+}
+
 h1 {
-	color: #f1f1f8;
-	font: 700 2.5rem/2.875rem "Montserrat", sans-serif;
+	font-size: 2.5rem;
+	line-height: 2.875rem;
 }
 
 h2 {
-	color: #f1f1f8;
-	font: 700 2.25rem/2.75rem "Montserrat", sans-serif;
+	font-size: 2.25rem;
+	line-height: 2.75rem;
 }
 
 h3 {
-	color: #f1f1f8;
-	font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
+	font-size: 1.75rem;
+	line-height: 2.215rem;
 }
 
 h4 {
-	color: #f1f1f8;
-	font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
+	font-size: 1.375rem;
+	line-height: 1.75rem;
 }
 
 h5 {
-	color: #f1f1f8;
-	font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
+	font-size: 1.125rem;
+	line-height: 1.625rem;
 }
 
 h6 {
-	color: #f1f1f8;
-	font: 700 1rem/1.5rem "Montserrat", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 
 a {
-	color: #f1f1f8;
-	text-decoration: underline;
+	text-decoration: none;
+	color: #ae52d4;
 }
 
 a:hover {
-	color: #f1f1f8;
 	text-decoration: underline;
+	color: #ae52d4;
 }
 
 a.turquoise {
-	color: #46BE4A;
+	color: #ae52d4;
 }
 
 a.white {
@@ -124,46 +160,55 @@ a.white {
 }
 
 .testimonial-text {
-	font: italic 400 1rem/1.5rem "Open Sans", sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 1rem;
+	font-weight: 1.5rem;
 }
 
 .testimonial-author {
-	font: 700 1rem/1.5rem "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #46BE4A;
+	border: 0.125rem solid #fa5788;
 	border-radius: 2rem;
-	background-color: #46BE4A;
+	background-color: #fa5788;
 	color: #fff;
-	font: 700 0.75rem/0 "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: .75rem;
+	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #46BE4A;
+	color: #fa5788;
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #46BE4A;
+	border: 0.125rem solid #c2185b;
 	border-radius: 2rem;
-	background-color: #46BE4A;
+	background-color: #c2185b;
 	color: #fff;
-	font: 700 0.75rem/0 "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: .75rem;
+	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #46BE4A;
+	color: #fa5788;
 	text-decoration: none;
 }
 
@@ -181,17 +226,19 @@ a.white {
 .btn-outline-reg {
 	display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #46BE4A;
+	border: 0.125rem solid #fa5788;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: #46BE4A;
-	font: 700 0.75rem/0 "Montserrat", sans-serif;
+	color: #fa5788;
+	font-weight: 700;
+	font-size: .75rem;
+	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 .btn-outline-reg:hover {
-	background-color: #46BE4A;
+	background-color: #fa5788;
 	color: #fff;
 	text-decoration: none;
 }
@@ -199,17 +246,19 @@ a.white {
 .btn-outline-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #46BE4A;
+	border: 0.125rem solid #fa5788;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: #46BE4A;
-	font: 700 0.75rem/0 "Montserrat", sans-serif;
+	color: #fa5788;
+	font-weight: 700;
+	font-size: .75rem;
+	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 .btn-outline-lg:hover {
-	background-color: #46BE4A;
+	background-color: #fa5788;
 	color: #fff;
 	text-decoration: none;
 }
@@ -217,17 +266,19 @@ a.white {
 .btn-outline-sm {
 	display: inline-block;
 	padding: 1rem 1.625rem 0.875rem 1.625rem;
-	border: 0.125rem solid #46BE4A;
+	border: 0.125rem solid #fa5788;
 	border-radius: 2rem;
 	background-color: transparent;
-	color: #46BE4A;
-	font: 700 0.625rem/0 "Montserrat", sans-serif;
+	color: #fa5788;
+	font-weight: 700;
+	font-size: .625rem;
+	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 .btn-outline-sm:hover {
-	background-color: #46BE4A;
+	background-color: #fa5788;
 	color: #fff;
 	text-decoration: none;
 }
@@ -251,7 +302,9 @@ a.white {
 	left: 1.375rem;
 	color: #f1f1f8;
 	opacity: 1;
-	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: .875rem;
+	line-height: 1.375rem;
 	cursor: text;
 	transition: all 0.2s ease;
 }
@@ -284,7 +337,9 @@ a.white {
 	border-radius: 0.25rem;
 	background-color: #413d52;
 	color: #f1f1f8;
-	font: 400 0.875rem/1.875rem "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: .875rem;
+	line-height: 1.875rem;
 	transition: all 0.2s ease;
 	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
 }
@@ -338,7 +393,9 @@ select::-ms-expand {
 	border-radius: 0.25rem;
 	background-color: #413d52;
 	color: #f1f1f8;
-	font: 400 0.875rem/1.75rem "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: .875rem;
+	line-height: 1.75rem;
 	transition: all 0.2s ease;
 }
 
@@ -356,7 +413,9 @@ select::-ms-expand {
 }
 
 .checkbox {
-	font: 400 0.75rem/1.25rem "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: .75rem;
+	line-height: 1.25rem;
 }
 
 input[type='checkbox'] {
@@ -375,18 +434,20 @@ input[type='checkbox'] {
 	display: inline-block;
 	width: 100%;
 	height: 3.125rem;
-	border: 1px solid #46BE4A;
+	border: 1px solid #fa5788;
 	border-radius: 1.5rem;
-	background-color: #46BE4A;
+	background-color: #fa5788;
 	color: #fff;
-	font: 700 0.75rem/1.75rem "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: .75rem;
+	line-height: 1.75rem;
 	cursor: pointer;
 	transition: all 0.2s ease;
 }
 
 .form-control-submit-button:hover {
 	background-color: transparent;
-	color: #46BE4A;
+	color: #fa5788;
 }
 
 /* Form Success And Error Message Formatting */
@@ -397,7 +458,9 @@ input[type='checkbox'] {
 	display: block;
 	margin-bottom: 0;
 	color: #f1f1f8;
-	font: 400 1.125rem/1rem "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 1rem;
 }
 
 .help-block.with-errors .list-unstyled {
@@ -638,10 +701,12 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	background-color:#37474F;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-	font: 700 0.75rem/2rem "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: .75rem;
+	line-height: 2rem;
 	transition: all 0.2s ease;
+	background-color: #7b1fa2;
 }
 
 .navbar-custom .navbar-brand.logo-text img {
@@ -649,7 +714,9 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-text {
-	font: 700 2.375rem/1.5rem "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 2.375rem;
+	line-height: 1.5rem;
 	color: #fff;
 	letter-spacing: -0.5px;
 	text-decoration: none;
@@ -671,7 +738,7 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #46BE4A;
+	color: #ae52d4;
 	font-weight:bolder;
 }
 
@@ -714,11 +781,13 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item .item-text {
-	font: 700 0.75rem/1.5rem "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: .75rem;
+	line-height: 1.5rem;
 }
 
 .navbar-custom .dropdown-item:hover .item-text {
-	color: #46BE4A;
+	color: #ae52d4;
 }
 
 .navbar-custom .dropdown-items-divide-hr {
@@ -782,7 +851,7 @@ input[type='checkbox'] {
 }
 
 .header #js-rotating {
-	color: #46BE4A;
+	color: #fa5788;
 }
 
 .header .p-large {
@@ -862,7 +931,7 @@ input[type='checkbox'] {
 .tabs {
 	padding-top: 6.5rem;
 	padding-bottom: 4.25rem;
-	background-color: #2f2c3d;
+	background-color: #c2185b;
 }
 
 .tabs h2 {
@@ -887,18 +956,20 @@ input[type='checkbox'] {
 	padding: 0.5rem 1.375rem 0.25rem 1.375rem;
 	border: none;
 	border-bottom: 0.1875rem solid #f1f1f8;
-	border-radius: 0;
 	color: #f1f1f8;
-	font: 700 1rem/1.75rem "Montserrat", sans-serif;
+	border-radius: 0;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.75rem;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 .tabs .nav-link.active,
 .tabs .nav-link:hover {
-	border-bottom: 0.1875rem solid #46BE4A;
+	border-bottom: 0.1875rem solid #fa5788;
+	color: #fa5788;
 	background-color: transparent;
-	color: #46BE4A;
 }
 
 .tabs .nav-link .fas {
@@ -928,7 +999,7 @@ input[type='checkbox'] {
 	width: 3.5rem;
 	height: 3.5rem;
 	border-radius: 50%;
-	background-color: #46BE4A;
+	background-color: #fa5788;
 	text-align: center;
 	vertical-align: top;
 }
@@ -1183,7 +1254,7 @@ input[type='checkbox'] {
 	margin-bottom: 1.125rem;
 	margin-left: 0;
 	border: 0;
-	background-color: #46BE4A;
+	background-color: #fa5788;
 	text-align: left;
 }
 
@@ -1204,7 +1275,7 @@ input[type='checkbox'] {
 .lightbox-basic table .icon-cell {
 	width: 2rem;
 	padding-right: 0.25rem;
-	color: #46BE4A;
+	color: #fa5788;
 	text-align: center;
 }
 
@@ -1213,7 +1284,7 @@ input[type='checkbox'] {
 	width: auto;
 	height: auto;
 	margin-left: 0.375rem;
-	color: #46BE4A;
+	color: #fa5788;
 	opacity: 1;
 }
 
@@ -1237,7 +1308,7 @@ input[type='checkbox'] {
 .slider-2 {
 	padding-top: 6.875rem;
 	padding-bottom: 6.875rem;
-	background-color: #2f2c3d;
+	background-color: #8c0032;
 }
 
 .slider-2 .slider-container {
@@ -1310,7 +1381,7 @@ input[type='checkbox'] {
 .counter {
 	padding-top: 6.5rem;
 	padding-bottom: 5.375rem;
-	background-color: #262431;
+	background-color: #222;
 	text-align: center;
 }
 
@@ -1324,14 +1395,18 @@ input[type='checkbox'] {
 
 .counter #counter .counter-value {
 	color: #f1f1f8;
-	font: 700 3.5rem/4.25rem "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 3.5rem;
+	line-height: 4.25rem;
 	vertical-align: middle;
 }
 
 .counter #counter .counter-info {
 	margin-bottom: 0;
-	color: #46BE4A;
-	font: 400 0.875rem/1.25rem "Open Sans", sans-serif;
+	color: #fa5788;
+	font-weight: 400;
+	font-size: .875rem;
+	line-height: 1.25rem;
 	vertical-align: middle;
 }
 
@@ -1362,7 +1437,7 @@ input[type='checkbox'] {
 .form .list-unstyled .fab {
 	margin-right: 0.5rem;
 	font-size: 0.875rem;
-	color: #46BE4A;
+	color: #ae52d4;
 }
 
 .form .list-unstyled .fa-phone {
@@ -1375,7 +1450,7 @@ input[type='checkbox'] {
 /**********************/
 .footer {
 	padding-top: 5rem;
-	background-color: #262431;
+	background-color: #111;
 }
 
 .footer .footer-col {
@@ -1387,7 +1462,7 @@ input[type='checkbox'] {
 }
 
 .footer .list-unstyled .fas {
-	color: #46BE4A;
+	color: #ae52d4;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
@@ -1417,7 +1492,7 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
-    color: #46BE4A;
+    color: #fa5788;
 }
 
 
@@ -1427,7 +1502,7 @@ input[type='checkbox'] {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
-	background-color: #262431;
+	background-color: #111;
 	text-align: center;
 }
 
@@ -1449,13 +1524,13 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: #46BE4A url("../img/up-arrow.png") no-repeat center 47%;
+	background: #ae52d4 url("../img/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
 
 a:hover.back-to-top {
-	background-color: #46BE4A;
+	background-color: #7b1fa2;
 }
 
 
@@ -1503,7 +1578,7 @@ a:hover.back-to-top {
 }
 
 .ex-basic-2 .list-unstyled .fas {
-	color: #46BE4A;
+	color: #fa5788;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
@@ -1548,7 +1623,9 @@ a:hover.back-to-top {
 	}
 
 	h1 {
-		font: 700 3.25rem/3.75rem "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 3.25rem;
+		line-height: 3.75rem;
 	}
 	/* end of general styles */
 
@@ -1575,13 +1652,13 @@ a:hover.back-to-top {
 
 	.navbar-custom .nav-item .nav-link:hover,
 	.navbar-custom .nav-item .nav-link.active {
-		color: #46BE4A;
+		color: #ae52d4;
 	}
 
 	.navbar-custom.top-nav-collapse {
         padding: 0.5rem 1.5rem 0.5rem 2rem;
 		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-		background-color: #37474F;
+		background-color: #7b1fa2;
 	}
 
 	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
@@ -1594,7 +1671,7 @@ a:hover.back-to-top {
 
 	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
 	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-		color: #46BE4A;
+		color: #ae52d4;
 	}
 
 	.navbar-custom .dropdown-menu {
@@ -1759,7 +1836,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom .fa-stack-2x {
-		color: #46BE4A;
+		color: #ae52d4;
 		transition: all 0.2s ease;
 	}
 
@@ -1773,7 +1850,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom .fa-stack:hover .fa-stack-1x {
-		color: #46BE4A;
+		color: #ae52d4;
 	}
 	/* end of navigation */
 
@@ -1920,7 +1997,9 @@ a:hover.back-to-top {
 	}
 
 	.counter #counter .counter-value {
-		font: 700 4.25rem/4.5rem "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 4.25rem;
+		line-height: 4.5rem;
 	}
 	/* end of statistics */
 
